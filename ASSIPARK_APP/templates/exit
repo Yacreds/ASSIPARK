@@ -1,0 +1,42 @@
+[33mcommit 35c90bebdfea8d221555cf72ddd8381c237c27dc[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Angel <95361737+Yacreds@users.noreply.github.com>
+Date:   Mon Mar 20 20:07:26 2023 -0500
+
+    autofocus en el login
+
+[33mcommit a7a3935518bfe57a0777ed47b530f701886e141f[m
+Author: Angel <95361737+Yacreds@users.noreply.github.com>
+Date:   Mon Mar 20 20:01:08 2023 -0500
+
+    Pagina Modulos y sus estilos
+
+[33mcommit 2359fe925bd1abeb6e18674c2f6ff8421e0bcbca[m
+Author: Kevin Carrillo <37084646+kcarrillor01@users.noreply.github.com>
+Date:   Mon Mar 20 17:44:44 2023 -0500
+
+    Llenar el contenido del homepage
+
+[33mcommit ecad968897789ea60c187cfed0a167bb4adcd7cd[m
+Merge: 6d9e676 6a9339d
+Author: Kevin Carrillo <37084646+kcarrillor01@users.noreply.github.com>
+Date:   Mon Mar 20 17:21:10 2023 -0500
+
+    Merge branch 'main' of https://github.com/LeninAlexHer/ASSIPARK
+
+[33mcommit 6d9e676f950e01dc115803bfe75b62fe84a76551[m
+Author: Kevin Carrillo <37084646+kcarrillor01@users.noreply.github.com>
+Date:   Mon Mar 20 17:20:11 2023 -0500
+
+    Implementación del footer
+
+[33mcommit 6a9339d9bcd041001393a11d6570e88834bef3f9[m
+Author: Kevin Carrillo <kevinf_carrillo@soy.sena.edu.co>
+Date:   Mon Mar 20 16:49:59 2023 -0500
+
+    Implementaci+on del footer
+
+[33mcommit 9912753055db88f838dd0da7c89da5e7efbddafa[m
+Author: LeninAlexHer <lhernandeznavas@gmail.com>
+Date:   Mon Mar 20 13:10:16 2023 -0500
+
+    First commit
