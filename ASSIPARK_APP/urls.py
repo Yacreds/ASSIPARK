@@ -13,7 +13,7 @@ urlpatterns = [
     path('rec_pass', views.rec_pass, name='rec_pass'),
     path('inicio', views.index, name='inicio'),
         #Rutas en la aplicacion
-    path('incioApp', views.inicioApp, name='inicioApp'),
+    path('inicioApp', views.inicioApp, name='inicioApp'),
     path('registrarVehiculo', views.registrarVehiculo, name='registrarVehiculo'),
     
 ]
