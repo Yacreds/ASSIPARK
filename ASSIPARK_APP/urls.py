@@ -15,6 +15,10 @@ urlpatterns = [
         #Rutas en la aplicacion
     path('inicioApp', views.inicioApp, name='inicioApp'),
     path('registrarVehiculo', views.registrarVehiculo, name='registrarVehiculo'),
+    path('descripcion', views.description, name='descripcion'),
+    path('eliminar/<int:idParametro>', views.eliminar, name='eliminar'),
+    path('editar', views.editar, name='editar'),
+    path('vehiculo/editar/<int:idParametro>', views.editar, name='editar'),
+
     
 ]
- 

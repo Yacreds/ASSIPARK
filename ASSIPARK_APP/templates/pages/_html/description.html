@@ -84,62 +84,42 @@
             </div>
             
             <div class="col" style="background-color: #F6F5FF;">
-            <table border ="1">
                 <br>
-                <br>                   
+                <br>
+                {%for vehiculo in mas%}                   
                 <thead>
-                    <th>Placa</th>
-                    <td>
-                        |
-                    </td>
-                    <th>Tipo de Vehiculo</th>
-                    <td>
-                        |
-                    </td>
-                    <th>Parqueadero Asignado</th>
-                    <td>
-                        |
-                    </td>
-                    <th>Propietario</th>
-                    <td>
-                        |
-                    </td>
+                    <th>ID: {{vehiculo.id}} <th>
+                        <br>
+                    <th>Placa: {{vehiculo.placa}} </th>
+                    <br>
+                    <th>Color del Vehiculo: {{vehiculo.color}}</th>                    
+                    <br>
+                    <th>Marca: {{vehiculo.marca}}</th>
+                    <br>
+                    <th>Tipo de Vehiculo: {{vehiculo.tipo}}</th>
+                    <br>
+                    <th>Parqueadero: {{vehiculo.parqueadero}}</th>
+                    <br>
+                    <th>Propietario: {{vehiculo.propietario}}</th>
+                    <br>
+                    <th>Cedula: {{vehiculo.cedula}}</th>
+                    <br>
+                    <th>Telefono: {{vehiculo.telefono}}</th>
+                    <br>
+                    <th>Apartamento: {{vehiculo.apartamento}}</th>
+                    <br>
+                    <th>¿Visitante o Residente?: {{vehiculo.tipoPropietario}}</th>
+                    <br>
                     <th>
-                        Opciones
+                        Opcion:
                     </th>
+                    <th> <a href="{%url 'eliminar' vehiculo.id%}">Eliminar</a> | <a href="{% url 'editar' vehiculo.id%}"> Editar </a> </th>
+                    <br>
+                    <br>
                 </thead>
-                {%for vehiculo in vehiculos%}
-                <tr>
-                    <td>
-                    {{vehiculo.placa}}
-                    </td>
-                    <td>
-                        |  
-                    </td>
-                    <td>
-                    {{vehiculo.tipo}}
-                    </td>
-                    <td>
-                        |
-                    </td>
-                    <td>
-                    {{vehiculo.parqueadero}}
-                    </td>
-                    <td>
-                        |
-                    </td>
-                    <td>
-                    {{vehiculo.propietario}}
-                    </td>
-                    <td>
-                        |
-                    </td>
-                    <td>
-                        <a href="{%url 'eliminar' vehiculo.id%}">Eliminar</a> | <a href="{% url 'editar' vehiculo.id%}"> Editar </a>
-                    </td>
-                </tr>
+                
                 {% endfor %}
-                <a href="{% url 'descripcion'%}">Mas detalles </a>
+                <a href="{% url 'inicioApp'%}">Volver</a>
             </div>
         </div>
     </div>

@@ -28,7 +28,12 @@ def rec_pass(request):
     return render(request, 'pages/_html/rec_pass.html')
 
 def inicioApp(request):
-    return render(request, 'pages/_html/inicioApp.html')
+    inicioApp = Vehiculo.objects.all()
+    return render(request, 'pages/_html/inicioApp.html', {'vehiculos' : inicioApp})
+
+def description(request):
+    description = Vehiculo.objects.all()
+    return render(request, 'pages/_html/description.html', {'mas' : description})
 
 def registrarVehiculo(request):
     formulario=VehiculoForm(request.POST or None)  
@@ -37,7 +42,16 @@ def registrarVehiculo(request):
         return redirect('inicioApp')        
     return render(request, 'pages/_html/registrarVehiculo.html', {'formulario':formulario})
 
-def eliminarVehiculo(request, idPAramentro):
-    vehiculo=Vehiculo.objects.get(id=idPAramentro)
+def editar(request, idParametro):
+    vehiculo = Vehiculo.objects.get(id=idParametro)
+    formulario=VehiculoForm(request.POST or None, request.FILES or None, instance=vehiculo)  
+    if formulario.is_valid and request.method=='POST':
+        formulario.save()
+        return redirect('inicioApp')        
+    return render(request, 'pages/_html/editar.html', {'formulario':formulario})
+
+def eliminar(request, idParametro):
+    vehiculo=Vehiculo.objects.get(id=idParametro)
     vehiculo.delete()
-    return redirect('inicioAapp')
+    return redirect('inicioApp')
+
