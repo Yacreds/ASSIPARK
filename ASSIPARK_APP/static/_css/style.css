@@ -151,30 +151,30 @@ ul, ol {
 .container h1{
     font-weight: bold;
 }
-* {
+*{
     font-family: "poppins", sans-serif;
     box-sizing: border-box;
-  }
-  #sidebar li{
+}
+#sidebar li{
     height: 50px;
     list-style: none;
     display: flex;
     align-items: center;
     margin-top: 10px;
-  }
-  #sidebar .text{
+}
+#sidebar .text{
     color: #8c8c8c;
-  }
-  #sidebar #icon{
+}
+#sidebar #icon{
     color: #8c8c8c;
-  }
+}
   
-  #sidebar #icon{
+#sidebar #icon{
     min-width: 60px;
     border-radius: 6px;
-  }
+}
   
-  #sidebar li a{
+#sidebar li a{
     list-style: none;
     height: 100%;
     display: flex;
@@ -183,8 +183,8 @@ ul, ol {
     width: 100%;
     border-radius: 6px;
     text-decoration: none;
-  }
+}
 
-  #sex{
-
-  }
+#formulario{
+    justify-content: center;
+}
