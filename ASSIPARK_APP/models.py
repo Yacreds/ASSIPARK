@@ -17,3 +17,4 @@ class Vehiculo(models.Model):
     
     def delete(self, using=None, keep_parents=False):
         super().delete()
+

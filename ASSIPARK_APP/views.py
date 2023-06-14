@@ -55,3 +55,14 @@ def eliminar(request, idParametro):
     vehiculo.delete()
     return redirect('inicioApp')
 
+def kevinGit(request):
+    return redirect('https://github.com/Kcarrillor01')
+
+def leninGit(request):
+    return redirect('https://github.com/LeninAlexHer')
+
+def davidGit(request):
+    return redirect('https://github.com/DavidPulido2005')
+
+def angelGit(request):
+    return redirect('https://github.com/Yacreds')

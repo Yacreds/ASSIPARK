@@ -2,6 +2,7 @@ body{
     font-family: "Franklin Gothic Medium";
     background: white;
 }
+
 #homepage{
     background:linear-gradient(to right,  #5533ff, #38def6);
 }
